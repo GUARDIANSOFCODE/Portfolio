@@ -6,76 +6,52 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="darkModeToggle">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="container">
-            <h1>Hello, I'm <span>Your Name</span></h1>
-            <h2>Web Developer & Designer</h2>
-            <a href="#projects" class="btn">View Projects</a>
-            <a href="#contact" class="btn">Contact Me</a>
-        </div>
-    </section>
-
-    <!-- About Section -->
     <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Hello! I'm a passionate web developer skilled in HTML, CSS, and JavaScript. I love building beautiful, functional websites.</p>
-        </div>
+        <h2>About Me</h2>
+        <p>Hello! I am a passionate web developer with expertise in front-end and back-end technologies.</p>
+        <a href="resume.pdf" download class="resume-btn">Download Resume</a>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <div class="skill-bar">
-                <p>HTML</p>
-                <div class="progress"><div class="progress-bar" style="width: 90%;"></div></div>
-            </div>
-            <div class="skill-bar">
-                <p>CSS</p>
-                <div class="progress"><div class="progress-bar" style="width: 85%;"></div></div>
-            </div>
-            <div class="skill-bar">
-                <p>JavaScript</p>
-                <div class="progress"><div class="progress-bar" style="width: 80%;"></div></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
     <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project">
-                <img src="images/project1.jpg" alt="Project 1">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project-card">
                 <h3>Project 1</h3>
-                <p>Brief description of the project.</p>
+                <p>Description of project 1.</p>
             </div>
-            <div class="project">
-                <img src="images/project2.jpg" alt="Project 2">
+            <div class="project-card">
                 <h3>Project 2</h3>
-                <p>Brief description of the project.</p>
+                <p>Description of project 2.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 3</h3>
+                <p>Description of project 3.</p>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
+        <h2>Contact Me</h2>
+        <p>Email: workwithsankalp008@gmail.com</p>
+        <p>GitHub: <a href="https://github.com/GUARDIANSOFCODE" target="_blank">GUARDIANSOFCODE</a></p>
     </section>
 
+    <footer>
+        <p>&copy; 2025 My Portfolio</p>
+    </footer>
 </body>
 </html>
