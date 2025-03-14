@@ -1,89 +1,115 @@
-/* General Styles */
+/* General Styling */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
+    background: #f5f5f5;
     color: #333;
+    transition: background 0.3s, color 0.3s;
 }
 
-/* Hero Section */
-#hero {
-    background: linear-gradient(to right, #1a1a1a, #333);
+/* Dark Mode */
+body.dark-mode {
+    background: #1e1e1e;
     color: white;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: white;
+    padding: 15px;
     text-align: center;
-    padding: 100px 20px;
 }
 
-#hero h1 span {
-    color: #f39c12;
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-.btn {
-    display: inline-block;
-    background: #f39c12;
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
     color: white;
-    padding: 10px 20px;
-    margin: 10px;
     text-decoration: none;
-    border-radius: 5px;
+}
+
+/* Dark Mode Button */
+#darkModeToggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
 }
 
 /* Sections */
-.container {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding: 50px 0;
-}
-
-h2 {
-    color: #f39c12;
-}
-
-/* Skills Section */
-.skill-bar {
-    text-align: left;
-    margin: 10px 0;
-}
-
-.progress {
-    background: #ddd;
-    height: 10px;
-    width: 100%;
-    border-radius: 5px;
-}
-
-.progress-bar {
-    background: #f39c12;
-    height: 100%;
-    border-radius: 5px;
-}
-
-/* Projects */
-.project {
-    background: white;
+section {
     padding: 20px;
-    margin: 20px 0;
-    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.project img {
-    width: 100%;
-    border-radius: 5px;
-}
-
-/* Contact Section */
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-}
-
-button {
-    background: #f39c12;
+.dark-mode section {
+    background: #2c2c2c;
     color: white;
+}
+
+/* Resume Button */
+.resume-btn {
+    display: inline-block;
+    margin-top: 10px;
     padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-  }
+    background: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.resume-btn:hover {
+    background: #555;
+}
+
+/* Projects Section */
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-card {
+    background: #e3e3e3;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .project-card {
+    background: #444;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
